@@ -1,3 +1,5 @@
+"use client";
+
 import { Separator } from "@/components/ui/separator";
 import { Twitter } from "lucide-react";
 import Link from "next/link";
