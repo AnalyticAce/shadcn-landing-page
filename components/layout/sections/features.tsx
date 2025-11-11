@@ -42,7 +42,7 @@ const featureList: FeaturesProps[] = [
       "Receive curated summaries delivered to your inbox at your preferred time each day.",
   },
   {
-    icon: "Layout",
+    icon: "LayoutList",
     title: "Web Timeline View",
     description:
       "Beautiful, distraction-free timeline view to browse filtered tweets in a calm interface.",
