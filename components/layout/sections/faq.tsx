@@ -1,11 +1,13 @@
 "use client";
 
+import { Badge } from "@/components/ui/badge";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { HelpCircle } from "lucide-react";
 
 interface FAQProps {
   question: string;
@@ -45,28 +47,52 @@ const FAQList: FAQProps[] = [
 
 export const FAQSection = () => {
   return (
-    <section id="faq" className="container md:w-[700px] py-24 sm:py-32">
-      <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          FAQ
-        </h2>
+    <section id="faq" className="container md:w-[800px] py-24 sm:py-32 relative">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-primary/5 pointer-events-none rounded-3xl" />
+      
+      <div className="relative">
+        <div className="text-center mb-12 space-y-4">
+          <Badge className="bg-gradient-to-r from-primary/10 to-purple-500/10 text-primary border-primary/20">
+            <HelpCircle className="w-3 h-3 mr-1" />
+            FAQ
+          </Badge>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold">
-          Frequently Asked Questions
-        </h2>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+            Frequently Asked{" "}
+            <span className="text-transparent bg-gradient-to-r from-primary to-purple-600 bg-clip-text">
+              Questions
+            </span>
+          </h2>
+          
+          <p className="text-lg text-muted-foreground">
+            Everything you need to know about NoNoiseTweets
+          </p>
+        </div>
+
+        <Accordion 
+          type="single" 
+          collapsible 
+          className="space-y-4"
+        >
+          {FAQList.map(({ question, answer, value }, index) => (
+            <AccordionItem 
+              key={value} 
+              value={value}
+              className="border-2 rounded-lg px-6 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 animate-fade-in-up"
+              style={{ animationDelay: `${index * 50}ms` }}
+            >
+              <AccordionTrigger className="text-left hover:text-primary hover:no-underline py-5 text-base font-semibold">
+                {question}
+              </AccordionTrigger>
+
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+                {answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
-
-      <Accordion type="single" collapsible className="AccordionRoot">
-        {FAQList.map(({ question, answer, value }) => (
-          <AccordionItem key={value} value={value}>
-            <AccordionTrigger className="text-left">
-              {question}
-            </AccordionTrigger>
-
-            <AccordionContent>{answer}</AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
     </section>
   );
 };
