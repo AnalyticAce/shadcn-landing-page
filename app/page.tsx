@@ -6,6 +6,14 @@ import { HeroSection } from "@/components/layout/sections/hero";
 import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 
+// Tailark enhanced components
+import { HeroTailark } from "@/components/layout/sections/hero-tailark";
+import { FeaturesTailark } from "@/components/layout/sections/features-tailark";
+import { TestimonialsTailark } from "@/components/layout/sections/testimonials-tailark";
+import { CallToActionTailark } from "@/components/layout/sections/cta-tailark";
+import { PricingTailark } from "@/components/layout/sections/pricing-tailark";
+import { FooterTailark } from "@/components/layout/sections/footer-tailark";
+
 export const metadata = {
   title: "NoNoiseTweets - Only the signal. No noise.",
   description: "Stay informed without the distraction. AI-curated tweets, topic filters, distraction-free reading.",
@@ -37,13 +45,16 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <HeroTailark />
       <SponsorsSection />
       <BenefitsSection />
-      <FeaturesSection />
+      <FeaturesTailark />
+      <TestimonialsTailark />
       <ServicesSection />
+      <PricingTailark />
+      <CallToActionTailark />
       <FAQSection />
-      <FooterSection />
+      <FooterTailark />
     </>
   );
 }
