@@ -10,40 +10,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "UserPlus",
+    title: "Secure Sign-up",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Quick and secure onboarding process. Connect your account and start filtering tweets in minutes.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "Users",
+    title: "Add Influencers",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Follow the experts that matter to you. Add usernames of influencers, analysts, and thought leaders.",
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
+    icon: "Filter",
+    title: "Custom Topic Filters",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Choose your topics like finance, macroeconomics, or venture capital to get only relevant content.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: "Sparkles",
+    title: "AI Relevance Filter",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Advanced NLP-powered filtering ensures you only see tweets that truly match your interests.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: "Mail",
+    title: "Daily Email Digest",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Receive curated summaries delivered to your inbox at your preferred time each day.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: "Layout",
+    title: "Web Timeline View",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Beautiful, distraction-free timeline view to browse filtered tweets in a calm interface.",
   },
 ];
 
@@ -51,17 +51,16 @@ export const FeaturesSection = () => {
   return (
     <section id="features" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
+        Key Features
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        Everything You Need to Stay Informed
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        Our MVP provides all the essential tools to filter Twitter noise and focus on what matters.
+        More features are coming soon.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

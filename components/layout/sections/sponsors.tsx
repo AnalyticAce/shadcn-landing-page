@@ -11,40 +11,40 @@ interface sponsorsProps {
 
 const sponsors: sponsorsProps[] = [
   {
-    icon: "Crown",
-    name: "Acmebrand",
+    icon: "TrendingUp",
+    name: "Finance & Trading",
   },
   {
-    icon: "Vegan",
-    name: "Acmelogo",
+    icon: "Landmark",
+    name: "Politics",
   },
   {
-    icon: "Ghost",
-    name: "Acmesponsor",
+    icon: "Rocket",
+    name: "Tech & Startups",
   },
   {
-    icon: "Puzzle",
-    name: "Acmeipsum",
+    icon: "LineChart",
+    name: "Macroeconomics",
   },
   {
-    icon: "Squirrel",
-    name: "Acme",
+    icon: "Briefcase",
+    name: "Venture Capital",
   },
   {
-    icon: "Cookie",
-    name: "Accmee",
+    icon: "Users",
+    name: "Founders",
   },
   {
-    icon: "Drama",
-    name: "Acmetech",
+    icon: "Target",
+    name: "Analysts",
   },
 ];
 
 export const SponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
-      <h2 className="text-lg md:text-xl text-center mb-6">
-        Our Platinum Sponsors
+      <h2 className="text-lg md:text-xl text-center mb-6 text-muted-foreground">
+        Who It&apos;s For
       </h2>
 
       <div className="mx-auto">
@@ -62,7 +62,7 @@ export const SponsorsSection = () => {
               <Icon
                 name={icon as keyof typeof icons}
                 size={32}
-                color="white"
+                color="hsl(var(--primary))"
                 className="mr-2"
               />
               {name}

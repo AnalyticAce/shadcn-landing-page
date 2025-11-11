@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
+import { Twitter } from "lucide-react";
 import Link from "next/link";
 
 export const FooterSection = () => {
@@ -9,20 +9,81 @@ export const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
-              <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
+              <Twitter className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary p-2 text-white" />
 
-              <h3 className="text-2xl">Shadcn</h3>
+              <h3 className="text-2xl">NoNoiseTweets</h3>
             </Link>
+            <p className="mt-4 text-muted-foreground text-sm">
+              NoNoiseTweets helps you stay informed without the noise of Twitter.
+              AI-curated tweets, topic filters, distraction-free reading — all in one calm experience.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-lg">Product</h3>
+            <div>
+              <Link href="#features" className="opacity-60 hover:opacity-100">
+                Features
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#benefits" className="opacity-60 hover:opacity-100">
+                Benefits
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#faq" className="opacity-60 hover:opacity-100">
+                FAQ
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-lg">Use Cases</h3>
+            <div>
+              <Link href="#" className="opacity-60 hover:opacity-100">
+                Finance & Trading
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#" className="opacity-60 hover:opacity-100">
+                Politics
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#" className="opacity-60 hover:opacity-100">
+                Tech & Startups
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-lg">Company</h3>
+            <div>
+              <Link href="#" className="opacity-60 hover:opacity-100">
+                About Us
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#" className="opacity-60 hover:opacity-100">
+                Privacy Policy
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#" className="opacity-60 hover:opacity-100">
+                Terms of Service
+              </Link>
+            </div>
           </div>
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Contact</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
-              </Link>
-            </div>
-
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
                 Twitter
@@ -31,70 +92,13 @@ export const FooterSection = () => {
 
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Instagram
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Platforms</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                iOS
+                Email
               </Link>
             </div>
 
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Android
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Web
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Help</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact Us
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                FAQ
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Discord
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
+                Support
               </Link>
             </div>
           </div>
@@ -103,14 +107,7 @@ export const FooterSection = () => {
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
-            &copy; 2024 Designed and developed by
-            <Link
-              target="_blank"
-              href="https://github.com/leoMirandaa"
-              className="text-primary transition-all border-primary hover:border-b-2 ml-1"
-            >
-              Leo Miranda
-            </Link>
+            &copy; 2024 NoNoiseTweets. All rights reserved.
           </h3>
         </section>
       </div>

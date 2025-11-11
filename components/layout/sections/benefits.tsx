@@ -10,28 +10,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "Ban",
+    title: "No more doomscrolling",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Get insights without opening X. Receive curated updates that matter to you without falling into the endless scroll.",
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
+    icon: "Brain",
+    title: "AI-powered filters",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Powered by NLP to detect what's truly relevant. Our AI understands context and filters out the noise automatically.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
+    icon: "Mail",
+    title: "Daily digest emails",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Clean summaries at your chosen time. Stay informed on your schedule without constant notifications.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "Globe",
+    title: "Distraction-free web app",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Simple, fast, and calm interface. Focus on the signal that drives smarter thinking and better decisions.",
   },
 ];
 
@@ -40,15 +40,14 @@ export const BenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">Why NoNoiseTweets</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Your Time and Focus Deserve Better
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Whether you&apos;re a trader, analyst, or founder — NoNoiseTweets helps you stay informed 
+            without the distraction. We believe information should empower, not exhaust.
           </p>
         </div>
 
