@@ -59,27 +59,27 @@ const testimonials = [
 export const TestimonialsTailark = () => {
   return (
     <section id="testimonials" className="relative overflow-hidden py-24 sm:py-32">
-      {/* Background decoration */}
+      {/* Background decoration with brand colors */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-brand-teal/5 to-transparent" />
       </div>
 
       <div className="container">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
-          <Badge className="mb-4 gap-1 bg-primary/10 text-primary hover:bg-primary/20">
+          <Badge className="mb-4 gap-1 bg-brand-teal/10 text-brand-teal hover:bg-brand-teal/20 border-brand-teal/20 transition-all duration-250">
             <Star className="h-3 w-3 fill-current" />
             Testimonials
           </Badge>
           
-          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+          <h2 className="mb-4 text-3xl font-semibold tracking-tight text-sleek sm:text-4xl md:text-5xl">
             Loved by professionals
-            <span className="block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-twitter-blue to-brand-teal bg-clip-text text-transparent">
               worldwide
             </span>
           </h2>
           
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground text-sleek">
             Join thousands of professionals who&apos;ve reclaimed their time and focus.
           </p>
         </div>
@@ -89,45 +89,45 @@ export const TestimonialsTailark = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={testimonial.name}
-              className="group relative overflow-hidden border-2 bg-card/50 backdrop-blur-sm transition-all hover:border-primary/30 hover:shadow-lg"
+              className="group relative overflow-hidden border-2 border-secondary bg-card/50 backdrop-blur-sm transition-all duration-250 ease-in-out hover:border-brand-teal/30 hover:shadow-lg hover-scale"
               style={{ 
                 animationDelay: `${index * 100}ms`,
               }}
             >
               <CardContent className="p-6">
-                {/* Quote icon */}
-                <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-2">
-                  <Quote className="h-5 w-5 text-primary" />
+                {/* Quote icon with brand teal */}
+                <div className="mb-4 inline-flex rounded-lg bg-brand-teal/10 p-2">
+                  <Quote className="h-5 w-5 text-brand-teal" />
                 </div>
 
-                {/* Rating */}
+                {/* Rating with brand teal */}
                 <div className="mb-4 flex gap-1">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <Star
                       key={i}
-                      className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      className="h-4 w-4 fill-brand-teal text-brand-teal"
                     />
                   ))}
                 </div>
 
                 {/* Content */}
-                <p className="mb-6 text-muted-foreground leading-relaxed">
+                <p className="mb-6 text-muted-foreground leading-relaxed text-sleek">
                   &ldquo;{testimonial.content}&rdquo;
                 </p>
 
                 {/* Author */}
                 <div className="flex items-center gap-3">
-                  <Avatar className="h-10 w-10 border-2 border-primary/10">
+                  <Avatar className="h-10 w-10 border-2 border-brand-teal/10">
                     <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
                     <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                   </Avatar>
                   
                   <div className="flex-1">
                     <div className="flex items-center gap-2">
-                      <p className="font-semibold text-sm">{testimonial.name}</p>
+                      <p className="font-semibold text-sm text-sleek">{testimonial.name}</p>
                       {testimonial.verified && (
                         <svg
-                          className="h-4 w-4 text-primary"
+                          className="h-4 w-4 text-twitter-blue"
                           viewBox="0 0 20 20"
                           fill="currentColor"
                         >
@@ -139,12 +139,12 @@ export const TestimonialsTailark = () => {
                         </svg>
                       )}
                     </div>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    <p className="text-sm text-muted-foreground text-sleek">{testimonial.role}</p>
                   </div>
                 </div>
 
-                {/* Decorative gradient */}
-                <div className="absolute -right-8 -bottom-8 h-24 w-24 rounded-full bg-gradient-to-br from-primary/10 to-transparent opacity-0 blur-2xl transition-opacity group-hover:opacity-100" />
+                {/* Decorative gradient with brand teal */}
+                <div className="absolute -right-8 -bottom-8 h-24 w-24 rounded-full bg-gradient-to-br from-brand-teal/10 to-transparent opacity-0 blur-2xl transition-opacity duration-250 group-hover:opacity-100" />
               </CardContent>
             </Card>
           ))}

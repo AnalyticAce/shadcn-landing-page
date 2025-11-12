@@ -38,24 +38,24 @@ const serviceList: ServiceProps[] = [
 export const ServicesSection = () => {
   return (
     <section id="services" className="container py-24 sm:py-32 relative">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-transparent pointer-events-none" />
+      {/* Background decoration with brand colors */}
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-twitter-blue/5 to-transparent pointer-events-none" />
       
       <div className="relative">
         <div className="text-center space-y-4 mb-12">
-          <Badge className="bg-gradient-to-r from-primary/10 to-purple-500/10 text-primary border-primary/20">
+          <Badge className="bg-gradient-to-r from-brand-teal/10 to-twitter-blue/10 text-brand-teal border-brand-teal/20 transition-all duration-250">
             <Zap className="w-3 h-3 mr-1" />
             How It Works
           </Badge>
 
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-sleek">
             Three{" "}
-            <span className="text-transparent bg-gradient-to-r from-primary to-purple-600 bg-clip-text">
+            <span className="text-transparent bg-gradient-to-r from-twitter-blue to-brand-teal bg-clip-text">
               Simple Steps
             </span>
           </h2>
           
-          <p className="md:w-1/2 mx-auto text-lg text-muted-foreground">
+          <p className="md:w-1/2 mx-auto text-lg text-muted-foreground text-sleek">
             Get started in minutes. No complex setup, no learning curve.
           </p>
         </div>
@@ -64,31 +64,31 @@ export const ServicesSection = () => {
           {serviceList.map(({ title, description, step }, index) => (
             <Card
               key={title}
-              className="relative overflow-hidden bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border-2 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 group animate-fade-in-up"
+              className="relative overflow-hidden bg-card backdrop-blur-sm border-2 border-secondary hover:border-brand-teal/50 hover:shadow-xl hover:shadow-brand-teal/10 transition-all duration-250 ease-in-out group animate-fade-in-up hover-scale"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              {/* Gradient overlay with brand colors */}
+              <div className="absolute inset-0 bg-gradient-to-br from-twitter-blue/0 to-brand-teal/5 opacity-0 group-hover:opacity-100 transition-opacity duration-250" />
               
               {/* Step number - large background */}
-              <div className="absolute -right-8 -top-8 text-[120px] font-bold text-primary/5 group-hover:text-primary/10 transition-colors duration-300">
+              <div className="absolute -right-8 -top-8 text-[120px] font-bold text-brand-teal/5 group-hover:text-brand-teal/10 transition-colors duration-250">
                 {step}
               </div>
 
               <CardHeader className="relative z-10">
                 <div className="flex items-start justify-between mb-4">
                   <Badge
-                    className="bg-gradient-to-r from-primary to-primary/80 text-white border-0 shadow-md"
+                    className="bg-gradient-to-r from-twitter-blue to-brand-teal text-white border-0 shadow-md"
                   >
                     STEP {step}
                   </Badge>
                 </div>
                 
-                <CardTitle className="text-xl mb-3 group-hover:text-primary transition-colors">
+                <CardTitle className="text-xl mb-3 group-hover:text-brand-teal transition-colors duration-250 text-sleek">
                   {title}
                 </CardTitle>
                 
-                <CardDescription className="text-base leading-relaxed">
+                <CardDescription className="text-base leading-relaxed text-sleek">
                   {description}
                 </CardDescription>
               </CardHeader>
@@ -96,9 +96,9 @@ export const ServicesSection = () => {
           ))}
         </div>
 
-        {/* Connection lines for desktop */}
+        {/* Connection lines for desktop with brand color */}
         <div className="hidden lg:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-1 -z-10">
-          <div className="w-full h-full bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+          <div className="w-full h-full bg-gradient-to-r from-transparent via-brand-teal/20 to-transparent" />
         </div>
       </div>
     </section>

@@ -55,12 +55,24 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // NonoiseTweets brand colors
+        "brand-teal": "#00C896",
+        "twitter-blue": "#1DA1F2",
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      letterSpacing: {
+        tight: "-0.01em",
+      },
+      spacing: {
+        "8": "0.5rem",
+        "16": "1rem",
+        "24": "1.5rem",
+        "40": "2.5rem",
       },
       keyframes: {
         "accordion-down": {
@@ -79,12 +91,23 @@ module.exports = {
           from: { height: "var(--radix-collapsible-content-height)" },
           to: { height: 0 },
         },
+        shimmer: {
+          "0%": { backgroundPosition: "-1000px 0" },
+          "100%": { backgroundPosition: "1000px 0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
+        shimmer: "shimmer 2s infinite linear",
+      },
+      transitionDuration: {
+        "250": "250ms",
+      },
+      transitionTimingFunction: {
+        "ease-in-out": "ease-in-out",
       },
     },
   },

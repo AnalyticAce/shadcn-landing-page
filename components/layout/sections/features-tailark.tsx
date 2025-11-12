@@ -53,30 +53,30 @@ const features = [
 export const FeaturesTailark = () => {
   return (
     <section id="features" className="relative py-24 sm:py-32">
-      {/* Background decoration */}
+      {/* Background decoration with brand colors */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-teal/5 to-transparent" />
         <div className="absolute left-1/2 top-0 -translate-x-1/2">
-          <div className="h-[500px] w-[500px] rounded-full bg-primary/10 blur-3xl" />
+          <div className="h-[500px] w-[500px] rounded-full bg-twitter-blue/10 blur-3xl" />
         </div>
       </div>
 
       <div className="container">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
-          <Badge className="mb-4 gap-1 bg-primary/10 text-primary hover:bg-primary/20">
+          <Badge className="mb-4 gap-1 bg-brand-teal/10 text-brand-teal hover:bg-brand-teal/20 border-brand-teal/20 transition-all duration-250">
             <Sparkles className="h-3 w-3" />
             Features
           </Badge>
           
-          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+          <h2 className="mb-4 text-3xl font-semibold tracking-tight text-sleek sm:text-4xl md:text-5xl">
             Everything you need to
-            <span className="block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-twitter-blue to-brand-teal bg-clip-text text-transparent">
               stay informed
             </span>
           </h2>
           
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground text-sleek">
             Powerful features designed to help you cut through the noise and focus on what matters most.
           </p>
         </div>
@@ -88,33 +88,28 @@ export const FeaturesTailark = () => {
             return (
               <Card
                 key={feature.title}
-                className="group relative overflow-hidden border-2 bg-card/50 backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+                className="group relative overflow-hidden border-2 border-secondary bg-card/50 backdrop-blur-sm transition-all duration-250 ease-in-out hover:border-brand-teal/50 hover:shadow-lg hover:shadow-brand-teal/10 hover-scale"
                 style={{ 
                   animationDelay: `${index * 100}ms`,
                 }}
               >
                 <CardContent className="p-6">
-                  {/* Icon */}
-                  <div className="mb-4 inline-flex rounded-2xl bg-gradient-to-br p-3 ring-4 ring-primary/10 transition-all group-hover:scale-110 group-hover:ring-primary/20"
-                    style={{
-                      background: `linear-gradient(135deg, var(--tw-gradient-from), var(--tw-gradient-to))`,
-                      backgroundImage: `linear-gradient(135deg, rgb(var(--primary) / 0.1), rgb(var(--primary) / 0.05))`
-                    }}
-                  >
-                    <Icon className="h-6 w-6 text-primary" />
+                  {/* Icon with brand colors */}
+                  <div className="mb-4 inline-flex rounded-2xl bg-gradient-to-br from-twitter-blue/10 to-brand-teal/10 p-3 ring-4 ring-brand-teal/10 transition-all duration-250 group-hover:scale-110 group-hover:ring-brand-teal/20">
+                    <Icon className="h-6 w-6 text-brand-teal" />
                   </div>
 
                   {/* Content */}
-                  <h3 className="mb-2 text-xl font-semibold transition-colors group-hover:text-primary">
+                  <h3 className="mb-2 text-xl font-semibold transition-colors duration-250 group-hover:text-brand-teal text-sleek">
                     {feature.title}
                   </h3>
                   
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-sleek">
                     {feature.description}
                   </p>
 
-                  {/* Decorative gradient */}
-                  <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-br from-primary/10 to-transparent opacity-0 blur-2xl transition-opacity group-hover:opacity-100" />
+                  {/* Decorative gradient with brand teal */}
+                  <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-br from-brand-teal/10 to-transparent opacity-0 blur-2xl transition-opacity duration-250 group-hover:opacity-100" />
                 </CardContent>
               </Card>
             );
