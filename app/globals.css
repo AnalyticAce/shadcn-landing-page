@@ -217,4 +217,17 @@ html {
   .animation-delay-1000 {
     animation-delay: 1000ms;
   }
+
+  .animation-delay-2000 {
+    animation-delay: 2000ms;
+  }
+
+  .animate-fade-in {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .bg-grid-white {
+    background-image: linear-gradient(to right, rgb(255 255 255 / 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.1) 1px, transparent 1px);
+  }
 }
