@@ -10,7 +10,6 @@ import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { HeroTailark } from "@/components/layout/sections/hero-tailark";
 import { FeaturesTailark } from "@/components/layout/sections/features-tailark";
 import { TestimonialsTailark } from "@/components/layout/sections/testimonials-tailark";
-import { CallToActionTailark } from "@/components/layout/sections/cta-tailark";
 import { PricingTailark } from "@/components/layout/sections/pricing-tailark";
 import { FooterTailark } from "@/components/layout/sections/footer-tailark";
 
@@ -52,7 +51,6 @@ export default function Home() {
       <TestimonialsTailark />
       <ServicesSection />
       <PricingTailark />
-      <CallToActionTailark />
       <FAQSection />
       <FooterTailark />
     </>
