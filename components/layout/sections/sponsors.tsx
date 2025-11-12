@@ -50,14 +50,14 @@ export const SponsorsSection = () => {
       
       <div className="relative space-y-8">
         <div className="text-center space-y-4">
-          <Badge className="bg-gradient-to-r from-primary/10 to-purple-500/10 text-primary border-primary/20">
+          <Badge className="bg-gradient-to-r from-brand-teal/20 to-twitter-blue/20 text-brand-teal border-brand-teal/30 font-semibold">
             <Users className="w-3 h-3 mr-1" />
             Perfect For
           </Badge>
           
-          <h2 className="text-2xl md:text-3xl font-bold text-muted-foreground">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground">
             Built for{" "}
-            <span className="text-transparent bg-gradient-to-r from-primary to-purple-600 bg-clip-text">
+            <span className="text-transparent bg-gradient-to-r from-twitter-blue to-brand-teal bg-clip-text">
               Focused Professionals
             </span>
           </h2>

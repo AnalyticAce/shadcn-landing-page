@@ -43,19 +43,19 @@ export const ServicesSection = () => {
       
       <div className="relative">
         <div className="text-center space-y-4 mb-12">
-          <Badge className="bg-gradient-to-r from-brand-teal/10 to-twitter-blue/10 text-brand-teal border-brand-teal/20 transition-all duration-250">
+          <Badge className="bg-gradient-to-r from-brand-teal/20 to-twitter-blue/20 text-brand-teal border-brand-teal/30 font-semibold transition-all duration-250">
             <Zap className="w-3 h-3 mr-1" />
             How It Works
           </Badge>
 
-          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-sleek">
+          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-foreground">
             Three{" "}
             <span className="text-transparent bg-gradient-to-r from-twitter-blue to-brand-teal bg-clip-text">
               Simple Steps
             </span>
           </h2>
           
-          <p className="md:w-1/2 mx-auto text-lg text-muted-foreground text-sleek">
+          <p className="md:w-1/2 mx-auto text-lg text-muted-foreground">
             Get started in minutes. No complex setup, no learning curve.
           </p>
         </div>
