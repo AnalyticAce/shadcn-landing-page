@@ -48,24 +48,24 @@ const FAQList: FAQProps[] = [
 export const FAQSection = () => {
   return (
     <section id="faq" className="container md:w-[800px] py-24 sm:py-32 relative">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-primary/5 pointer-events-none rounded-3xl" />
+      {/* Background decoration with brand colors */}
+      <div className="absolute inset-0 bg-gradient-to-b from-twitter-blue/5 via-transparent to-brand-teal/5 pointer-events-none rounded-3xl" />
       
       <div className="relative">
         <div className="text-center mb-12 space-y-4">
-          <Badge className="bg-gradient-to-r from-primary/10 to-purple-500/10 text-primary border-primary/20">
+          <Badge className="bg-gradient-to-r from-brand-teal/10 to-twitter-blue/10 text-brand-teal border-brand-teal/20 transition-all duration-250">
             <HelpCircle className="w-3 h-3 mr-1" />
             FAQ
           </Badge>
 
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-sleek">
             Frequently Asked{" "}
-            <span className="text-transparent bg-gradient-to-r from-primary to-purple-600 bg-clip-text">
+            <span className="text-transparent bg-gradient-to-r from-twitter-blue to-brand-teal bg-clip-text">
               Questions
             </span>
           </h2>
           
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground text-sleek">
             Everything you need to know about NoNoiseTweets
           </p>
         </div>
@@ -79,14 +79,14 @@ export const FAQSection = () => {
             <AccordionItem 
               key={value} 
               value={value}
-              className="border-2 rounded-lg px-6 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 animate-fade-in-up"
+              className="border-2 border-secondary rounded-lg px-6 bg-card/50 backdrop-blur-sm hover:border-brand-teal/50 transition-all duration-250 ease-in-out animate-fade-in-up hover-scale"
               style={{ animationDelay: `${index * 50}ms` }}
             >
-              <AccordionTrigger className="text-left hover:text-primary hover:no-underline py-5 text-base font-semibold">
+              <AccordionTrigger className="text-left hover:text-brand-teal hover:no-underline py-5 text-base font-semibold transition-colors duration-250 text-sleek">
                 {question}
               </AccordionTrigger>
 
-              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5 text-sleek">
                 {answer}
               </AccordionContent>
             </AccordionItem>
