@@ -9,7 +9,7 @@ const testimonials = [
   {
     name: "Sarah Chen",
     role: "Venture Capitalist",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+    avatar: "https://randomuser.me/api/portraits/women/1.jpg",
     content: "NoNoiseTweets has transformed how I consume Twitter. I now get only the VC insights I need without the endless scroll. Game-changer for staying informed.",
     rating: 5,
     verified: true
@@ -17,7 +17,7 @@ const testimonials = [
   {
     name: "Marcus Johnson",
     role: "Tech Entrepreneur",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus",
+    avatar: "https://randomuser.me/api/portraits/men/6.jpg",
     content: "As someone who follows 500+ accounts, this tool is invaluable. The AI filtering is incredibly accurate at surfacing content that actually matters to my work.",
     rating: 5,
     verified: true
@@ -25,7 +25,7 @@ const testimonials = [
   {
     name: "Emily Rodriguez",
     role: "Financial Analyst",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emily",
+    avatar: "https://randomuser.me/api/portraits/women/4.jpg",
     content: "The daily digest feature saves me hours every week. I get all the market insights I need without the distraction. Absolutely worth it.",
     rating: 5,
     verified: true
@@ -33,7 +33,7 @@ const testimonials = [
   {
     name: "David Park",
     role: "Software Engineer",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=David",
+    avatar: "https://randomuser.me/api/portraits/men/2.jpg",
     content: "Clean interface, powerful filtering, and actually works as advertised. This is how Twitter should have been built from the start.",
     rating: 5,
     verified: true
@@ -41,7 +41,7 @@ const testimonials = [
   {
     name: "Lisa Thompson",
     role: "Marketing Director",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lisa",
+    avatar: "https://randomuser.me/api/portraits/women/13.jpg",
     content: "I can finally keep up with industry trends without getting overwhelmed. The topic filters are spot-on and save me so much time.",
     rating: 5,
     verified: true
@@ -49,7 +49,7 @@ const testimonials = [
   {
     name: "James Wilson",
     role: "Product Manager",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=James",
+    avatar: "https://randomuser.me/api/portraits/men/9.jpg",
     content: "The best investment I've made in my productivity this year. No more doom scrolling, just pure signal.",
     rating: 5,
     verified: true
