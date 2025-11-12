@@ -43,11 +43,11 @@ export const BenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32 relative">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24 gap-12">
         <div className="space-y-6">
-          <Badge className="bg-gradient-to-r from-brand-teal/10 to-twitter-blue/10 text-brand-teal border-brand-teal/20">
+          <Badge className="bg-gradient-to-r from-brand-teal/20 to-twitter-blue/20 text-brand-teal border-brand-teal/30 font-semibold">
             Why NoNoiseTweets
           </Badge>
 
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight text-sleek">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight text-foreground">
             Your Time and Focus
             <br />
             <span className="text-transparent bg-gradient-to-r from-twitter-blue to-brand-teal bg-clip-text">
@@ -55,7 +55,7 @@ export const BenefitsSection = () => {
             </span>
           </h2>
           
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-sleek">
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             Whether you&apos;re a trader, analyst, or founder — NoNoiseTweets helps you stay informed 
             without the distraction. We believe information should empower, not exhaust.
           </p>

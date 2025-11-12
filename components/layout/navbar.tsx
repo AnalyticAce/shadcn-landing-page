@@ -12,11 +12,9 @@ import {
 import { Separator } from "../ui/separator";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "../ui/navigation-menu";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -25,11 +23,6 @@ import { ToggleTheme } from "./toogle-theme";
 interface RouteProps {
   href: string;
   label: string;
-}
-
-interface FeatureProps {
-  title: string;
-  description: string;
 }
 
 const routeList: RouteProps[] = [
@@ -48,23 +41,6 @@ const routeList: RouteProps[] = [
   {
     href: "#faq",
     label: "FAQ",
-  },
-];
-
-const featureList: FeatureProps[] = [
-  {
-    title: "AI-Powered Filtering",
-    description: "Advanced NLP to detect what's truly relevant to you.",
-  },
-  {
-    title: "Daily Digests",
-    description:
-      "Receive clean summaries at your chosen time.",
-  },
-  {
-    title: "Distraction-Free",
-    description:
-      "Simple, fast, and calm interface for focused reading.",
   },
 ];
 
@@ -127,34 +103,6 @@ export const Navbar = () => {
       {/* <!-- Desktop --> */}
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
-              Features
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="grid w-[400px] gap-3 p-4">
-                <div className="text-sm font-medium mb-2">
-                  Experience the power of NoNoiseTweets
-                </div>
-                <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-
           <NavigationMenuItem>
             {routeList.map(({ href, label }) => (
               <NavigationMenuLink key={href} asChild>
