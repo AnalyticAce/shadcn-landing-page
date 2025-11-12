@@ -6,6 +6,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Font family definitions */
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .font-brand {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
 /* *=========== Default theme =========== */
 /* @layer base {
   :root {
@@ -73,67 +85,75 @@ html {
   }
 } */
 
-/* *=========== Orange theme =========== */
+/* *=========== NonoiseTweets Premium Calm Theme =========== */
 @layer base {
   :root {
+    /* Light mode fallback - not primary focus */
     --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
+    --foreground: 0 0% 5%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
+    --popover-foreground: 0 0% 5%;
 
-    --primary: 24.6 95% 53.1%;
-    --primary-foreground: 60 9.1% 97.8%;
+    --primary: 197 100% 48%; /* Twitter Blue #1DA1F2 */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
+    --accent: 164 100% 39%; /* Brand Teal #00C896 */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 24.6 95% 53.1%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 197 100% 48%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
+    /* NonoiseTweets Dark Mode - Primary Experience */
+    --background: 240 6% 5%; /* #0C0C0D - Deep black base */
+    --foreground: 240 5% 98%; /* #F9FAFB - Primary text */
 
-    --card: 24 9.8% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 240 5% 9%; /* #18181B - Surface background */
+    --card-foreground: 240 5% 98%; /* #F9FAFB */
 
-    --popover: 20 14.3% 4.1%;
-    --popover-foreground: 60 9.1% 97.8%;
+    --popover: 240 5% 9%;
+    --popover-foreground: 240 5% 98%;
 
-    --primary: 20.5 90.2% 48.2%;
-    --primary-foreground: 60 9.1% 97.8%;
+    --primary: 197 100% 48%; /* #1DA1F2 - Twitter Blue */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 12 6.5% 15.1%;
-    --secondary-foreground: 60 9.1% 97.8%;
+    --secondary: 240 4% 15%; /* #27272A - Subtle surface */
+    --secondary-foreground: 240 5% 98%;
 
-    --muted: 12 6.5% 15.1%;
-    --muted-foreground: 24 5.4% 63.9%;
+    --muted: 240 4% 15%; /* #27272A */
+    --muted-foreground: 240 1% 66%; /* #A1A1AA - Secondary text */
 
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 60 9.1% 97.8%;
+    --accent: 164 100% 39%; /* #00C896 - Brand Teal */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 72.2% 50.6%;
-    --destructive-foreground: 60 9.1% 97.8%;
+    --destructive: 0 84% 60%; /* #EF4444 - Error */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 12 6.5% 15.1%;
-    --input: 12 6.5% 15.1%;
-    --ring: 20.5 90.2% 48.2%;
+    --border: 240 4% 15%; /* #27272A - Line/Border */
+    --input: 240 4% 15%;
+    --ring: 197 100% 48%;
+    
+    /* State colors as CSS custom properties */
+    --success: 164 100% 39%; /* #00C896 */
+    --warning: 38 92% 50%; /* #F59E0B */
+    --error: 0 84% 60%; /* #EF4444 */
+    --info: 199 92% 61%; /* #38BDF8 */
   }
 }
 
@@ -154,7 +174,7 @@ html {
   }
 }
 
-/* Custom animations for modern UI */
+/* Custom animations for NonoiseTweets - Calm and Focused */
 @layer utilities {
   @keyframes fade-in-up {
     from {
@@ -185,6 +205,15 @@ html {
     }
   }
 
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
   .animate-fade-in-up {
     animation: fade-in-up 0.6s ease-out forwards;
   }
@@ -196,6 +225,17 @@ html {
   .animate-gradient {
     background-size: 200% 200%;
     animation: gradient 8s ease infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(
+      to right,
+      rgba(161, 161, 170, 0.1) 0%,
+      rgba(161, 161, 170, 0.2) 50%,
+      rgba(161, 161, 170, 0.1) 100%
+    );
+    background-size: 1000px 100%;
   }
 
   .animation-delay-100 {
@@ -226,8 +266,30 @@ html {
     animation: fade-in-up 0.6s ease-out forwards;
   }
 
+  /* Calm hover effects */
+  .hover-scale {
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+
+  .hover-glow {
+    transition: box-shadow 0.25s ease-in-out;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(29, 161, 242, 0.3);
+  }
+
   .bg-grid-white {
     background-image: linear-gradient(to right, rgb(255 255 255 / 0.1) 1px, transparent 1px),
       linear-gradient(to bottom, rgb(255 255 255 / 0.1) 1px, transparent 1px);
+  }
+
+  /* Typography helper - sleek premium feel */
+  .text-sleek {
+    letter-spacing: -0.01em;
   }
 }

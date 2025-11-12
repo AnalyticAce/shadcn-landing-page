@@ -71,9 +71,9 @@ const featureList: FeatureProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
-      <Link href="/" className="font-bold text-lg flex items-center">
-        <Twitter className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white p-2" />
+    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card backdrop-blur-sm">
+      <Link href="/" className="font-brand font-semibold text-lg flex items-center text-sleek">
+        <Twitter className="bg-gradient-to-tr from-twitter-blue to-brand-teal rounded-lg w-9 h-9 mr-2 border border-secondary text-white p-2" />
         NoNoiseTweets
       </Link>
       {/* <!-- Mobile --> */}
@@ -93,8 +93,8 @@ export const Navbar = () => {
             <div>
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
-                  <Link href="/" className="flex items-center">
-                    <Twitter className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white p-2" />
+                  <Link href="/" className="flex items-center font-brand font-semibold text-sleek">
+                    <Twitter className="bg-gradient-to-tr from-twitter-blue to-brand-teal rounded-lg w-9 h-9 mr-2 border border-secondary text-white p-2" />
                     NoNoiseTweets
                   </Link>
                 </SheetTitle>
